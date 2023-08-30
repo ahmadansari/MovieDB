@@ -9,7 +9,7 @@ Movie Database iOS App in SwiftUI
 ## Screenshots
 | Movies | Details |
 | ------ | ----- |
-|<img src="Screenshots/Movies.png" width="70%" height="auto">|<img src="Screenshots/Details.png" width="70%" height="auto">|
+|<img src="Screenshots/Movies.png">|<img src="Screenshots/Details.png">|
 
 ## Versioning
 
