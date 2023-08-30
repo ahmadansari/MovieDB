@@ -5,7 +5,7 @@ language: swift
 
 branches:
   only:
-    - main
+    - master
 
 script:
   - xcodebuild clean build -workspace MovieDB.xcworkspace -scheme MovieDB -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.5'
