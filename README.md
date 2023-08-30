@@ -1,5 +1,5 @@
 # MovieDB
-[![CI Status](https://travis-ci.com/ahmadansari/MovieDB.svg?branch=main)](https://app.travis-ci.com/github/ahmadansari/MovieDB)
+[![CI Status](https://travis-ci.com/ahmadansari/MovieDB.svg?branch=master)](https://app.travis-ci.com/github/ahmadansari/MovieDB)
 [![Version](https://img.shields.io/github/v/release/ahmadansari/MovieDB?style=flat)](https://github.com/ahmadansari/MovieDB)
 ![License](https://img.shields.io/github/license/ahmadansari/MovieDB?style=flat)
 ![Platform](https://img.shields.io/badge/platform-iOS-lightgrey?style=flat)
