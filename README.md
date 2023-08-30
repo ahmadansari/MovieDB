@@ -7,8 +7,9 @@ Movie Database iOS App in SwiftUI
 - Movie details (e.g. Poster, Rating, Language, Release Date, Overview)
 
 ## Screenshots
-[Movies]<img src="Screenshots/Movies.png" width="320" height="560">
-[Detail]<img src="Screenshots/Details.png" width="320" height="560">
+| Movies | Details |
+| ------ | ----- |
+|<img src="Screenshots/Movies.png" width="70%" height="auto">|<img src="Screenshots/Details.png" width="70%" height="auto">|
 
 ## Versioning
 
