@@ -13,12 +13,34 @@ struct MoviesView: View {
   @ObservedObject var presenter = MoviesPresenter()
   @State var selectedItem: MovieData?
 
+  @State private var isDatePickerVisible = false
+  @State private var selectedDate = Date()
+
   var body: some View {
     ZStack {
       Color.black.edgesIgnoringSafeArea(.all)
       listView
     }
     .navigationBarTitle(presenter.title, displayMode: .inline)
+    .toolbar {
+      ToolbarItem(placement: .navigationBarTrailing) {
+        Button("Filter") {
+          print("Filter tapped!")
+          isDatePickerVisible = true
+        }
+      }
+    }
+    .sheet(isPresented: $isDatePickerVisible,
+           onDismiss: {
+      print("Sheet Dismissed")
+    },
+           content: {
+      NavigationView {
+        DatePickerView(selectedDate: $selectedDate, isPresented: $isDatePickerVisible)
+      }
+      .presentationDetents([.height(300)])
+      .presentationDragIndicator(.automatic)
+    })
   }
 
   var listView: some View {
