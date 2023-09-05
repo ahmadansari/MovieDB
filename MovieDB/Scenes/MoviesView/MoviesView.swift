@@ -19,13 +19,6 @@ struct MoviesView: View {
       listView
     }
     .navigationBarTitle(presenter.title, displayMode: .inline)
-    .toolbar {
-      ToolbarItem(placement: .navigationBarTrailing) {
-        Button("Filter") {
-          print("Filter tapped!")
-        }
-      }
-    }
   }
 
   var listView: some View {
