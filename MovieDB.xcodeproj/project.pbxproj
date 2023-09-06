@@ -16,8 +16,8 @@
 		DC2969CC2A9793680043E854 /* Showtime.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC2969CA2A9793680043E854 /* Showtime.ttf */; };
 		DC2969CE2A979DB60043E854 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2969CD2A979DB60043E854 /* UIColor+Ext.swift */; };
 		DC2969D02A97E0430043E854 /* MovieRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2969CF2A97E0430043E854 /* MovieRow.swift */; };
-		DC717D8F2AA8C881009DB123 /* Config.json in Resources */ = {isa = PBXBuildFile; fileRef = DC717D8E2AA8C881009DB123 /* Config.json */; };
 		DC717D922AA8CA07009DB123 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC717D912AA8CA07009DB123 /* APIConfig.swift */; };
+		DC717D962AA8D516009DB123 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = DC717D952AA8D516009DB123 /* config.json */; };
 		DC8CD8CE2A980DFA00131D76 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8CD8CD2A980DFA00131D76 /* Date+Ext.swift */; };
 		DCB8FADA2A94DFF400DFC565 /* MovieDBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8FAD92A94DFF400DFC565 /* MovieDBApp.swift */; };
 		DCB8FADC2A94DFF400DFC565 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8FADB2A94DFF400DFC565 /* ContentView.swift */; };
@@ -42,8 +42,8 @@
 		DC2969CA2A9793680043E854 /* Showtime.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Showtime.ttf; sourceTree = "<group>"; };
 		DC2969CD2A979DB60043E854 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		DC2969CF2A97E0430043E854 /* MovieRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRow.swift; sourceTree = "<group>"; };
-		DC717D8E2AA8C881009DB123 /* Config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Config.json; sourceTree = "<group>"; };
 		DC717D912AA8CA07009DB123 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		DC717D952AA8D516009DB123 /* config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
 		DC8CD8CD2A980DFA00131D76 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		DCB8FAD62A94DFF400DFC565 /* MovieDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB8FAD92A94DFF400DFC565 /* MovieDBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDBApp.swift; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 		DC2969C72A97934E0043E854 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DC717D8E2AA8C881009DB123 /* Config.json */,
+				DC717D952AA8D516009DB123 /* config.json */,
 				DC2969C82A9793680043E854 /* Fonts */,
 				DCB8FADD2A94DFF600DFC565 /* Assets.xcassets */,
 			);
@@ -249,8 +249,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC2969CC2A9793680043E854 /* Showtime.ttf in Resources */,
-				DC717D8F2AA8C881009DB123 /* Config.json in Resources */,
 				DCB8FAE12A94DFF600DFC565 /* Preview Assets.xcassets in Resources */,
+				DC717D962AA8D516009DB123 /* config.json in Resources */,
 				DCB8FADE2A94DFF600DFC565 /* Assets.xcassets in Resources */,
 				DC2969CB2A9793680043E854 /* Rockout.otf in Resources */,
 			);

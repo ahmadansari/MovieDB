@@ -24,7 +24,7 @@ struct APIConfig: Decodable {
 
 extension APIConfig {
   static func load() -> APIConfig {
-    guard let configFileURL = Bundle.main.url(forResource: "Config", withExtension: "json") else {
+    guard let configFileURL = Bundle.main.url(forResource: "config", withExtension: "json") else {
       fatalError("Error loading configuration")
     }
 
