@@ -21,11 +21,13 @@ protocol MovieService {
 
 class MovieServiceImp: MovieService {
 
+  private let apiConfig: APIConfig = APIConfig.load()
+
   func genreList(completion: @escaping (Result<GenresServiceResponse, Error>) -> Void) {
-    guard var urlComponents = URLComponents(string: API.baseURL) else { return }
+    guard var urlComponents = URLComponents(string: apiConfig.baseURL) else { return }
     urlComponents.path += ServicePath.genreList
     urlComponents.queryItems = [
-      URLQueryItem(name: Keys.apiKey, value: API.apiKey)
+      URLQueryItem(name: Keys.apiKey, value: apiConfig.apiKey)
     ]
     guard let url = urlComponents.url else { return }
     var request = URLRequest(url: url)
@@ -45,10 +47,10 @@ class MovieServiceImp: MovieService {
   }
 
   func latestMovies(page: Int, completion: @escaping (Result<MovieServiceResponse, Error>) -> Void) {
-    guard var urlComponents = URLComponents(string: API.baseURL) else { return }
+    guard var urlComponents = URLComponents(string: apiConfig.baseURL) else { return }
     urlComponents.path += ServicePath.nowPlaying
     urlComponents.queryItems = [
-      URLQueryItem(name: Keys.apiKey, value: API.apiKey),
+      URLQueryItem(name: Keys.apiKey, value: apiConfig.apiKey),
       URLQueryItem(name: Keys.page, value: String(page)),
     ]
     guard let url = urlComponents.url else { return }
