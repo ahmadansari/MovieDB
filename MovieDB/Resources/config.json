@@ -1,9 +1,0 @@
-{
-    "api_key": "{{API_KEY}}",
-    "base_url": "https://api.themoviedb.org/3",
-    "images_path": "http://image.tmdb.org/t/p/",
-    "config_path": "https://api.themoviedb.org/3/configuration"
-}
-
-# Replace `{{API_KEY}}` with your actual API key.
-# To generate API_KEY follow steps here: https://www.themoviedb.org/settings/api
