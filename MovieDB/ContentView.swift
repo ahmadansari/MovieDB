@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
- var body: some View {
-    NavigationView {
-      MoviesView()
+    var body: some View {
+        NavigationView {
+            MoviesView()
+        }
+        .tint(Color.white)
     }
-    .tint(Color.white)
-  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-  static var previews: some View {
-    ContentView()
-  }
+    static var previews: some View {
+        ContentView()
+    }
 }

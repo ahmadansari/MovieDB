@@ -9,41 +9,40 @@ import SwiftUI
 
 @main
 struct MovieDBApp: App {
-
-  init() {
-    setupNavigationBarAppearance()
-  }
-
-  var body: some Scene {
-    WindowGroup {
-      ContentView()
+    init() {
+        setupNavigationBarAppearance()
     }
-  }
+
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
 }
 
 extension MovieDBApp {
-  func setupNavigationBarAppearance() {
-    let appearance = UINavigationBarAppearance()
-    appearance.configureWithTransparentBackground()
-    let navBarBG = UIImage.init(named: "navBar")?.withRenderingMode(.alwaysOriginal).resizableImage(withCapInsets: .zero, resizingMode: .stretch)
-    appearance.backgroundImage = navBarBG
+    func setupNavigationBarAppearance() {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithTransparentBackground()
+        let navBarBG = UIImage(named: "navBar")?.withRenderingMode(.alwaysOriginal).resizableImage(withCapInsets: .zero, resizingMode: .stretch)
+        appearance.backgroundImage = navBarBG
 
-    let navTintColor = UIColor.white
+        let navTintColor = UIColor.white
 
-    // For Big Titles
-    appearance.largeTitleTextAttributes = [
-      .foregroundColor: navTintColor,
-      .font: UIFont(name: "Rockout", size: 32.0) ?? UIFont.boldSystemFont(ofSize: 17)
-    ]
+        // For Big Titles
+        appearance.largeTitleTextAttributes = [
+            .foregroundColor: navTintColor,
+            .font: UIFont(name: "Rockout", size: 32.0) ?? UIFont.boldSystemFont(ofSize: 17),
+        ]
 
-    // For Small Titles
-    appearance.titleTextAttributes = [
-      .foregroundColor: navTintColor,
-      .font: UIFont(name: "Rockout", size: 32.0) ?? UIFont.boldSystemFont(ofSize: 17)
-    ]
+        // For Small Titles
+        appearance.titleTextAttributes = [
+            .foregroundColor: navTintColor,
+            .font: UIFont(name: "Rockout", size: 32.0) ?? UIFont.boldSystemFont(ofSize: 17),
+        ]
 
-    UINavigationBar.appearance().scrollEdgeAppearance = appearance
-    UINavigationBar.appearance().compactAppearance = appearance
-    UINavigationBar.appearance().standardAppearance = appearance  
-  }
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        UINavigationBar.appearance().compactAppearance = appearance
+        UINavigationBar.appearance().standardAppearance = appearance
+    }
 }
